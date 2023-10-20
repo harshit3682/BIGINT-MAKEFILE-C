@@ -1,0 +1,40 @@
+
+
+#output:
+#	gcc main.c initialize.c insert_front.c insert_end.c free_BigInt.c display.c add.c subtract.c multiply.c divide.c Compare.c length.c Create_node.c -o output
+	
+	
+	
+	
+#$(CC)=gcc
+#output:
+#	$(CC) main.c initialize.c insert_front.c insert_end.c free_BigInt.c display.c add.c subtract.c multiply.c     divide.c -o output
+
+#Clean:
+#	rm *.o output
+
+
+
+output: main.c initialize.c insert_front.c insert_end.c free_BigInt.c display.c add.c subtract.c multiply.c divide.c Compare.c length.c Create_node.c
+	gcc -o output main.c initialize.c insert_front.c insert_end.c free_BigInt.c display.c add.c subtract.c multiply.c divide.c Compare.c length.c Create_node.c 
+
+
+
+
+
+
+
+
+
+
+#$(CC)=gcc
+
+#output: main.o initialize.o insert_front.o insert_end.o free_BigInt.o display.o add.o subtract.o multiply.o divide.o
+#	$(CC) main.o initialize.o insert_front.o insert_end.o free_BigInt.o display.o add.o subtract.o multiply.o divide.o -o output
+	
+#main.o: main.c header.h
+#	$(CC) -c main.c
+	
+#add.o: add.c header.h
+#	$(CC) -c add.c
+        
